@@ -1,0 +1,43 @@
+.radius__container {
+    width: 1345px;
+    margin: 0px auto;
+    padding: 30px 120px;
+}
+
+.radius__title {
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    color: #0a1c51;
+    text-transform: uppercase;
+}
+
+.radius__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radius__content:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.radius__about {
+    font-family: "Rubik", sans-serif;
+    color: #0a1c51;
+    font-size: 20px;
+    margin: 0 30px 30px 0;
+    flex: 1;
+}
+
+.radius__about>p {
+    margin: 0 0 20px 0;
+}
+
+.radius__diag {
+    background-color: white;
+    width: 320px;
+    height: 320px;
+}
+
+.radius__diag_wide {
+    width: 550px;
+}

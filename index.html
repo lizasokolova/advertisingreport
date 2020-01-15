@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Motion Logic отчёт</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:500&display=swap" rel="stylesheet">
+    <script src="./assets/echarts.min.js"></script>
+</head>
+
+<body class="page">
+
+    <header class="page__header header">
+        <div class="header__container">
+            <a class="header__logo" href="https://motionlogic.ru/" target="_blank"><img src="./img/logo.jpg"></a>
+            <ul class="header__main-nav main-nav">
+                <li class="main-nav__link main-nav__link_active"><a href="main-anchor">О магазине</a></li>
+                <li class="main-nav__link"><a href="#radius250-anchor">В радиусе 250м</a></li>
+                <li class="main-nav__link"><a href="#radius500-anchor">В радиусе 500м</a></li>
+                <li class="main-nav__link"><a href="#traffic-anchor">Трафик</a></li>
+                <li class="main-nav__link"><a href="#anchor-anchor">Объекты-якоря</a></li>
+                <li class="main-nav__link"><a href="#competitor-anchor">Карта конкурентов</a></li>
+                <li class="main-nav__link"><a href="#payment-anchor">Платежеспособность аудитории</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="page__main main" id="main-anchor">
+        <div class="main__container">
+            <h1 class="main__title">
+                Отчет о торговой точке
+            </h1>
+
+            <div class="main__content">
+                <div class="main__map">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae36227f37f6c224f11c891f5696f9c48ee502415a4062923554902f31a64fa0d&amp;width=628&amp;height=315&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+
+                <p class="main__about">
+                    Дополнительная информация о торговой точке.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page__radius-250 radius" id="radius250-anchor">
+        <div class="radius__container">
+            <h2 class="radius__title">
+                В радиусе 250м
+            </h2>
+
+            <div class="radius__content">
+                <div class="radius__about">
+                    <p>
+                        Инерактивная диаграмма показызывает количество человек, которые работают и проживают в радиусе
+                        250м от
+                        объекта.
+                    </p>
+                    <p>
+                        Общее количество человек: 10'838
+                    </p>
+                </div>
+                <div id="diagram-people-count-250" class="radius__diag">
+                    <script src="./scripts/diagram-people-count-250.js"></script>
+                </div>
+            </div>
+
+            <div class="radius__content">
+                <div class="radius__about">
+                    <p>
+                        Интерактивная диаграмма показызывает количество и тип организаций, которые находятся в радиусе
+                        250м от
+                        объекта.
+                    </p>
+                    <p>
+                        Общее количество объектов: 95
+                    </p>
+                </div>
+                <div id="diagram-org-count-250" class="radius__diag radius__diag_wide">
+                    <script src="./scripts/diagram-org-count-250.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page__radius-500 radius" id="radius500-anchor">
+        <div class="radius__container">
+            <h2 class="radius__title">
+                В радиусе 500м
+            </h2>
+
+            <div class="radius__content">
+                <div class="radius__about">
+                    <p>
+                        Интерактивная диаграмма показызывает количество человек, которые работают и проживают в радиусе
+                        500м от
+                        объекта.
+                    </p>
+                    <p>
+                        Общее количество человек: 14'283
+                    </p>
+                </div>
+                <div id="diagram-people-count-500" class="radius__diag">
+                    <script src="./scripts/diagram-people-count-500.js"></script>
+                </div>
+            </div>
+
+            <div class="radius__content">
+                <div class="radius__about">
+                    <p>
+                        Интерактивная гистограмма показызывает количество и тип организаций, которые находятся в радиусе
+                        500м от
+                        объекта.
+                    </p>
+                    <p>
+                        Общее количество объектов: 171
+                    </p>
+                </div>
+                <div id="diagram-org-count-500" class="radius__diag radius__diag_wide">
+                    <script src="./scripts/diagram-org-count-500.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="page__traffic traffic" id="traffic-anchor">
+        <div class="traffic__container">
+            <h1 class="traffic__title">
+                Трафик рядом со входом в магазин
+            </h1>
+
+            <div class="traffic__content">
+                <div class="traffic__people">
+                    <p class="traffic__decription">
+                        На графике отображена динамика трафика пешеходов в будние дни и выходные. <br>
+                        Данные фиксировались в
+                        течении временных промежутков с 8 до 12 утра, с 12 до 14 дня и с 14 до 22 вечера.<br>
+                        <br>
+                        Общий трафик пешеходов за сутки в будний день: 1'604'397 чел. <br>
+                        Общий трафик пешеходов за сутки в выходной день: 540'995 чел.
+                    </p>
+                    <div id="line-traffic-people" class="traffic__diag">
+                        <script src="./scripts/line-traffic-people.js"></script>
+                    </div>
+                </div>
+
+                <div class="traffic__auto">
+                    <p class="traffic__decription">
+                        На графике отображена динамика трафика автомобилей в будние дни и выходные. <br>
+                        Данные фиксировались в
+                        течении временных промежутков с 8 до 12 утра, с 12 до 14 дня и с 14 до 22 вечера.<br>
+                        <br>
+                        Общий трафик автомобилей за сутки в будний день: 1'604'397 чел. <br>
+                        Общий трафик автомобилей за сутки в выходной день: 540'995 чел.
+                    </p>
+
+                    <div id="line-traffic-auto" class="traffic__diag">
+                        <script src="./scripts/line-traffic-auto.js"></script>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="page__anchor anchor" id="anchor-anchor">
+        <div class="anchor__container">
+            <h1 class="anchor__title">
+                Объекты-якоря
+            </h1>
+
+            <p class="anchor__decription">
+                На интерактивной диаграмме отображена статистика по объектам-якорям в радиусе 1000м, которые влияют на перемещение
+                людей.
+            </p>
+
+            <div class="anchor__content">
+                <div class="anchor__list">
+
+                </div>
+
+                <div id="diagram-anchor" class="anchor__diag">
+                    <script src="./scripts/diagram-anchor.js"></script>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="page__competitor competitor" id="competitor-anchor">
+        <div class="competitor__container">
+            <h1 class="competitor__title">
+                Карта конкурентов
+            </h1>
+
+            <p class="competitor__decription">
+                На интерактивную карту нанесена разметка с торговыми точками конкурентов в радиусе 500м.
+            </p>
+
+            <div class="competitor__map">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A165a11bb014140a2a03804d424ff5eeefcd8ea370a22129e7dbd4d447f4e68e3&amp;width=796&amp;height=609&amp;lang=ru_RU&amp;scroll=true">
+                    </script>
+            </div>
+
+            <div class="payment__content">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="page__payment payment" id="payment-anchor">
+        <div class="payment__container">
+            <h1 class="payment__title">
+                Платежеспособность аудитории
+            </h1>
+
+            <p class="payment__decription">
+                На графике представлена статистика платежеспособности аудитории в радиусе 250м.
+            </p>
+
+            <div id="diagram-payment" class="payment__diag">
+                <script src="./scripts/diagram-payment.js"></script>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+    <div class="page__footer footer">
+        <div class="footer__container">
+            <span class="footer__content">
+                Developed by
+                Motion Logic<br>
+                +7 (495) 134-12-41
+            </span>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

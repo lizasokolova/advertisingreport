@@ -1,0 +1,22 @@
+.competitor__container {
+    width: 1345px;
+    margin: 0px auto;
+    padding: 30px 120px;
+}
+
+.competitor__map {
+    padding-left: 150px;
+}
+
+.competitor__title {
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    color: #0a1c51;
+    text-transform: uppercase;
+}
+
+.competitor__decription {
+    font-family: "Rubik", sans-serif;
+    color: #0a1c51;
+    font-size: 20px;
+}

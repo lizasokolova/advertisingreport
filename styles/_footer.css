@@ -1,0 +1,14 @@
+.footer__container {
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px 120px;
+    height: 70px;
+    background-color: #0a1c51;
+    text-align: center;
+}
+
+.footer__content {
+    color: #ffffff;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+}

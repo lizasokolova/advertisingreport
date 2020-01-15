@@ -1,0 +1,36 @@
+.main {}
+
+.main__title {
+    font-family: "Rubik", sans-serif;
+    font-size: 36px;
+    color: #0a1c51;
+    text-transform: uppercase;
+}
+
+.main__container {
+    width: 1345px;
+    margin: 0px auto;
+    padding: 30px;
+}
+
+.main__content {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__map {
+    width: 500px;
+    height: 300px;
+    background-color: #0a1c51;
+}
+
+.main__about {
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    margin-left: 150px;
+    font-family: "Rubik", sans-serif;
+    color: #0a1c51;
+    font-size: 20px;
+}

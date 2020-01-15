@@ -1,0 +1,44 @@
+html {
+    overflow-x: hidden;
+}
+
+.page {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.page * {
+    box-sizing: border-box;
+}
+
+.page__header {
+    width: 100%;
+}
+
+.page__main {
+    width: 100%;
+    margin-top: 70px;
+    background-color: white;
+}
+
+.page__radius-250 {
+    background-color: rgb(244, 249, 255);
+}
+
+.page__radius-500 {
+    background-color: white;
+}
+
+.page__competitor {
+    width: 100%;
+}
+
+.page__traffic {
+    background-color: rgb(244, 249, 255);
+}
+
+.page__competitor {
+    background-color: rgb(244, 249, 255);
+}

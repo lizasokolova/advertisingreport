@@ -1,0 +1,24 @@
+.anchor__container {
+    width: 1345px;
+    margin: 0px auto;
+    padding: 30px 120px;
+}
+
+.anchor__diag {
+    background-color: white;
+    width: 840px;
+    height: 320px;
+}
+
+.anchor__title {
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    color: #0a1c51;
+    text-transform: uppercase;
+}
+
+.anchor__decription {
+    font-family: "Rubik", sans-serif;
+    color: #0a1c51;
+    font-size: 20px;
+}

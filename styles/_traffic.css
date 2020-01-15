@@ -1,0 +1,28 @@
+.traffic__container {
+    width: 1345px;
+    margin: 0px auto;
+    padding: 30px 120px;
+}
+
+.traffic__diag {
+    background-color: white;
+    width: 840px;
+    height: 320px;
+}
+
+.traffic__title {
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    color: #0a1c51;
+    text-transform: uppercase;
+}
+
+.traffic__decription {
+    font-family: "Rubik", sans-serif;
+    color: #0a1c51;
+    font-size: 20px;
+}
+
+.traffic__people {
+    padding-bottom: 30px;
+}
